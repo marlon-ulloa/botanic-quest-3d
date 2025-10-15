@@ -1,0 +1,984 @@
+{
+  "plants": [
+    {
+      "id": "1",
+      "scientific_name": "Lycopodium clavatum",
+      "common_name": "Licopodio",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://static.inaturalist.org/photos/93549245/medium.jpg"
+    },
+    {
+      "id": "2",
+      "scientific_name": "Pinus sylvestris",
+      "common_name": "Pino silvestre",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/171073483/medium.jpg"
+    },
+    {
+      "id": "3",
+      "scientific_name": "Juniperus communis",
+      "common_name": "Enebro",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://static.inaturalist.org/photos/32548279/medium.jpg"
+    },
+    {
+      "id": "4",
+      "scientific_name": "Taxus brevifolia",
+      "common_name": "Tejo del Pacífico",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/99338130/medium.jpeg"
+    },
+    {
+      "id": "5",
+      "scientific_name": "Ephedra sinica",
+      "common_name": "Efedra",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://static.inaturalist.org/photos/74227796/medium.jpeg"
+    },
+    {
+      "id": "6",
+      "scientific_name": "Allium sativum",
+      "common_name": "Ajo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/543709104/medium.jpg"
+    },
+    {
+      "id": "7",
+      "scientific_name": "Aloe vera",
+      "common_name": "Sábila",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/64273748/medium.jpeg"
+    },
+    {
+      "id": "8",
+      "scientific_name": "Zingiber officinale",
+      "common_name": "Jengibre",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/247973845/medium.jpeg"
+    },
+    {
+      "id": "9",
+      "scientific_name": "Curcuma longa",
+      "common_name": "Cúrcuma",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/55743/medium.jpg"
+    },
+    {
+      "id": "10",
+      "scientific_name": "Piper nigrum",
+      "common_name": "Pimienta negra",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "desert",
+      "image_url": "https://static.inaturalist.org/photos/155902482/medium.jpg"
+    },
+    {
+      "id": "11",
+      "scientific_name": "Morus nigra",
+      "common_name": "Mora ",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/260207304/medium.jpg"
+    },
+    {
+      "id": "12",
+      "scientific_name": "Cannabis sativa",
+      "common_name": "Cannabis",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/71843/medium.jpg"
+    },
+    {
+      "id": "13",
+      "scientific_name": "Humulus lupulus",
+      "common_name": "Lúpulo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/90572769/medium.jpg"
+    },
+    {
+      "id": "14",
+      "scientific_name": "Santalum album",
+      "common_name": "Sándalo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/30611222/medium.jpeg"
+    },
+    {
+      "id": "15",
+      "scientific_name": "Viscum album",
+      "common_name": "Muérdago",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/117465980/medium.jpg"
+    },
+    {
+      "id": "16",
+      "scientific_name": "Chenopodium ambrosioides",
+      "common_name": "Paico",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/84127806/medium.jpeg"
+    },
+    {
+      "id": "17",
+      "scientific_name": "Papaver somniferum",
+      "common_name": "Amapola",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/223924155/medium.jpg"
+    },
+    {
+      "id": "18",
+      "scientific_name": "Viola odorata",
+      "common_name": "Violeta olorosa",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/63834973/medium.jpg"
+    },
+    {
+      "id": "19",
+      "scientific_name": "Viola tricolor",
+      "common_name": "Pensamiento silvestre",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/9555/medium.jpg"
+    },
+    {
+      "id": "20",
+      "scientific_name": "Erythroxylum coca",
+      "common_name": "Coca",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/582373/medium.jpg"
+    },
+    {
+      "id": "21",
+      "scientific_name": "Eucalyptus globulus",
+      "common_name": "Eucalipto",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "desert",
+      "image_url": "https://static.inaturalist.org/photos/30675602/medium.jpg"
+    },
+    {
+      "id": "22",
+      "scientific_name": "Pimpinella anisum",
+      "common_name": "Anís",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/100287714/medium.jpg"
+    },
+    {
+      "id": "23",
+      "scientific_name": "Cocos nucifera",
+      "common_name": "Coco",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2373013/medium.JPG"
+    },
+    {
+      "id": "24",
+      "scientific_name": "Amygdalus communis",
+      "common_name": "Almendro",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "tropical",
+      "image_url": "https://static.inaturalist.org/photos/113968708/medium.jpeg"
+    },
+    {
+      "id": "25",
+      "scientific_name": "Dryopteris filix-mas",
+      "common_name": "Helecho macho",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/114518292/medium.jpg"
+    },
+    {
+      "id": "26",
+      "scientific_name": "Arctostaphylos uva-ursi",
+      "common_name": "Uva ursi",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/181302737/medium.jpeg"
+    },
+    {
+      "id": "27",
+      "scientific_name": "Salix alba",
+      "common_name": "Sauce blanco",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/70159039/medium.jpeg"
+    },
+    {
+      "id": "28",
+      "scientific_name": "Cynara scolymus",
+      "common_name": "Alcachofa",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/81534196/medium.jpeg"
+    },
+    {
+      "id": "29",
+      "scientific_name": "Salvia rosmarinus",
+      "common_name": "Romero",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/87326219/medium.jpg"
+    },
+    {
+      "id": "30",
+      "scientific_name": "Capsicum frutescens",
+      "common_name": "Ají ",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/18301410/medium.jpeg"
+    },
+    {
+      "id": "31",
+      "scientific_name": "Ginkgo biloba",
+      "common_name": "Ginkgo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/397250612/medium.jpeg"
+    },
+    {
+      "id": "32",
+      "scientific_name": "Passiflora incarnata",
+      "common_name": "Pasiflora",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/91738617/medium.jpg"
+    },
+    {
+      "id": "33",
+      "scientific_name": "Equisetum arvense",
+      "common_name": "Cola de caballo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/72597295/medium.jpg"
+    },
+    {
+      "id": "34",
+      "scientific_name": "Glycine max",
+      "common_name": "Soya",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/28348393/medium.jpeg"
+    },
+    {
+      "id": "35",
+      "scientific_name": "Hamamelis virginiana",
+      "common_name": "Hamamelis",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/102104076/medium.jpeg"
+    },
+    {
+      "id": "36",
+      "scientific_name": "Quercus infectoria",
+      "common_name": "Roble de Alepo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/93809567/medium.jpeg"
+    },
+    {
+      "id": "37",
+      "scientific_name": "Krameria triandra",
+      "common_name": "Ratania",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179459463/medium.jpeg"
+    },
+    {
+      "id": "38",
+      "scientific_name": "Croton lechleri",
+      "common_name": "Sangre de drago",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "desert",
+      "image_url": "https://static.inaturalist.org/photos/37129802/medium.jpeg"
+    },
+    {
+      "id": "39",
+      "scientific_name": "Taraxacum officinale",
+      "common_name": "Diente de león",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/23575133/medium.jpg"
+    },
+    {
+      "id": "40",
+      "scientific_name": "Acacia senegal",
+      "common_name": "Goma arábiga",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/113608458/medium.jpg"
+    },
+    {
+      "id": "41",
+      "scientific_name": "Acacia seyal",
+      "common_name": "Goma arábiga roja",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/409811887/medium.jpg"
+    },
+    {
+      "id": "42",
+      "scientific_name": "Astragalus gummifer",
+      "common_name": "Astrágalo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "desert",
+      "image_url": "https://static.inaturalist.org/photos/81926489/medium.jpg"
+    },
+    {
+      "id": "43",
+      "scientific_name": "Sterculia urens",
+      "common_name": "Esterculia",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/169599327/medium.jpeg"
+    },
+    {
+      "id": "44",
+      "scientific_name": "Plantago ovata",
+      "common_name": "Llantén ",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/3075386/medium.JPG"
+    },
+    {
+      "id": "45",
+      "scientific_name": "Malva sylvestris",
+      "common_name": "Malva",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5051933/medium.jpg"
+    },
+    {
+      "id": "46",
+      "scientific_name": "Althaea officinalis",
+      "common_name": "Malvavisco",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/217337777/medium.jpeg"
+    },
+    {
+      "id": "47",
+      "scientific_name": "Citrus × limon",
+      "common_name": "Limón",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/1297316/medium."
+    },
+    {
+      "id": "48",
+      "scientific_name": "Malus domestica",
+      "common_name": "Manzano",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/268437/medium.jpg"
+    },
+    {
+      "id": "49",
+      "scientific_name": "Arachis hypogaea",
+      "common_name": "Maní",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/105026294/medium.jpeg"
+    },
+    {
+      "id": "50",
+      "scientific_name": "Aesculus hippocastanum",
+      "common_name": "Castaño de Indias",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://static.inaturalist.org/photos/288506278/medium.jpeg"
+    },
+    {
+      "id": "51",
+      "scientific_name": "Melilotus officinalis",
+      "common_name": "Meliloto ",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/79309141/medium.jpg"
+    },
+    {
+      "id": "52",
+      "scientific_name": "Podophyllum peltatum",
+      "common_name": "Podofilino ",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/35674124/medium.jpg"
+    },
+    {
+      "id": "53",
+      "scientific_name": "Juglans regia",
+      "common_name": "Nogal",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/146867462/medium.jpg"
+    },
+    {
+      "id": "54",
+      "scientific_name": "Lawsonia inermis",
+      "common_name": "Henna ",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/60992866/medium.jpeg"
+    },
+    {
+      "id": "55",
+      "scientific_name": "Rheum palmatum",
+      "common_name": "Ruibarbo chino",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1135476/medium.jpg"
+    },
+    {
+      "id": "56",
+      "scientific_name": "Rhamnus frangula",
+      "common_name": "Frángula",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://static.inaturalist.org/photos/313256179/medium.jpeg"
+    },
+    {
+      "id": "57",
+      "scientific_name": "Rhamnus purshiana",
+      "common_name": "Cáscara sagrada",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/70995836/medium.jpg"
+    },
+    {
+      "id": "58",
+      "scientific_name": "Cassia senna",
+      "common_name": "Sen de Alejandría",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/214881/medium.jpg"
+    },
+    {
+      "id": "59",
+      "scientific_name": "Cassia angustifolia",
+      "common_name": "Sen de Tinnevelly",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/214881/medium.jpg"
+    },
+    {
+      "id": "60",
+      "scientific_name": "Olea europaea",
+      "common_name": "Olivo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/87194494/medium.jpg"
+    },
+    {
+      "id": "61",
+      "scientific_name": "Theobroma cacao",
+      "common_name": "Cacao",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/111512744/medium.jpeg"
+    },
+    {
+      "id": "62",
+      "scientific_name": "Ricinus communis",
+      "common_name": "Ricino",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://static.inaturalist.org/photos/61079958/medium.jpeg"
+    },
+    {
+      "id": "63",
+      "scientific_name": "Carica papaya",
+      "common_name": "Papaya",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "desert",
+      "image_url": "https://static.inaturalist.org/photos/176927180/medium.jpeg"
+    },
+    {
+      "id": "64",
+      "scientific_name": "Ananas comosus",
+      "common_name": "Piña",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179291263/medium.jpeg"
+    },
+    {
+      "id": "65",
+      "scientific_name": "Ficus carica",
+      "common_name": "Higuera",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "desert",
+      "image_url": "https://static.inaturalist.org/photos/97971657/medium.jpeg"
+    },
+    {
+      "id": "66",
+      "scientific_name": "Valeriana officinalis",
+      "common_name": "Valeriana",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/78028926/medium.jpeg"
+    },
+    {
+      "id": "67",
+      "scientific_name": "Hedera helix",
+      "common_name": "Hiedra",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/161053705/medium.jpeg"
+    },
+    {
+      "id": "68",
+      "scientific_name": "Panax ginseng",
+      "common_name": "Ginseng",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/53259714/medium.jpg"
+    },
+    {
+      "id": "69",
+      "scientific_name": "Ruscus aculeatus",
+      "common_name": "Rusco",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/174605118/medium.jpeg"
+    },
+    {
+      "id": "70",
+      "scientific_name": "Arnica montana",
+      "common_name": "Árnica",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2001055/medium.jpg"
+    },
+    {
+      "id": "71",
+      "scientific_name": "Digitalis lanata",
+      "common_name": "Dedalera",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/143949132/medium.jpeg"
+    },
+    {
+      "id": "72",
+      "scientific_name": "Strophanthus kombe",
+      "common_name": "Estrofanto",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/731541/medium.jpg"
+    },
+    {
+      "id": "73",
+      "scientific_name": "Digitalis purpurea",
+      "common_name": "Dedalera",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179728943/medium.jpeg"
+    },
+    {
+      "id": "74",
+      "scientific_name": "Pelargonium sidoides",
+      "common_name": "Pelargonio",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/229520205/medium.jpeg"
+    },
+    {
+      "id": "75",
+      "scientific_name": "Echinacea purpurea",
+      "common_name": "Equinácea",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/433818/medium.jpg"
+    },
+    {
+      "id": "76",
+      "scientific_name": "Foeniculum vulgare",
+      "common_name": "Hinojo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://static.inaturalist.org/photos/50868492/medium.jpg"
+    },
+    {
+      "id": "77",
+      "scientific_name": "Coriandrum sativum",
+      "common_name": "Cilantro",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/30423712/medium.jpeg"
+    },
+    {
+      "id": "78",
+      "scientific_name": "Apium graveolens",
+      "common_name": "Apio",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5647843/medium.jpeg"
+    },
+    {
+      "id": "79",
+      "scientific_name": "Petroselinum crispum",
+      "common_name": "Perejil",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/395413717/medium.jpg"
+    },
+    {
+      "id": "80",
+      "scientific_name": "Matricaria recutita",
+      "common_name": "Manzanilla",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/41829613/medium.jpeg"
+    },
+    {
+      "id": "81",
+      "scientific_name": "Artemisia absinthium",
+      "common_name": "Ajenjo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/45876952/medium.jpeg"
+    },
+    {
+      "id": "82",
+      "scientific_name": "Lavandula angustifolia",
+      "common_name": "Lavanda",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/157057/medium.jpg"
+    },
+    {
+      "id": "83",
+      "scientific_name": "Melissa officinalis",
+      "common_name": "Toronjil ",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "aquatic",
+      "image_url": "https://static.inaturalist.org/photos/45898551/medium.jpeg"
+    },
+    {
+      "id": "84",
+      "scientific_name": "Mentha × piperita",
+      "common_name": "Menta piperita",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/226081574/medium.jpg"
+    },
+    {
+      "id": "85",
+      "scientific_name": "Colchicum autumnale",
+      "common_name": "Cólquico",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/118641054/medium.jpeg"
+    },
+    {
+      "id": "86",
+      "scientific_name": "Atropa belladonna",
+      "common_name": "Belladona",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/9372/medium.jpg"
+    },
+    {
+      "id": "87",
+      "scientific_name": "Datura stramonium",
+      "common_name": "Estramonio",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/158790852/medium.jpeg"
+    },
+    {
+      "id": "88",
+      "scientific_name": "Hyoscyamus niger",
+      "common_name": "Beleño negro",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "forest",
+      "image_url": "https://static.inaturalist.org/photos/318097960/medium.jpeg"
+    },
+    {
+      "id": "89",
+      "scientific_name": "Nicotiana tabacum",
+      "common_name": "Tabaco",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/29279055/medium.jpeg"
+    },
+    {
+      "id": "90",
+      "scientific_name": "Coffea arabica",
+      "common_name": "Café",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "desert",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/224058295/medium.jpeg"
+    },
+    {
+      "id": "91",
+      "scientific_name": "Camellia sinensis",
+      "common_name": "Té",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/75816/medium.jpg"
+    },
+    {
+      "id": "92",
+      "scientific_name": "Catharanthus roseus",
+      "common_name": "Vinca de Madagascar",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/54935295/medium.jpeg"
+    },
+    {
+      "id": "93",
+      "scientific_name": "Cinchona officinalis",
+      "common_name": "Quina",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "forest",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31395272/medium.jpg"
+    },
+    {
+      "id": "94",
+      "scientific_name": "Ilex guayusa ",
+      "common_name": "Guayusa",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "aquatic",
+      "image_url": "https://static.inaturalist.org/photos/36080631/medium.jpeg"
+    },
+    {
+      "id": "95",
+      "scientific_name": "Uncaria tomentosa ",
+      "common_name": "Uña de gato",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "desert",
+      "image_url": "https://static.inaturalist.org/photos/73480407/medium.jpg"
+    },
+    {
+      "id": "96",
+      "scientific_name": "Cymbopogon citratus",
+      "common_name": "Hierba Luisa",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "easy",
+      "zone": "aquatic",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/61513592/medium.jpg"
+    },
+    {
+      "id": "97",
+      "scientific_name": "Brugmansia aurea",
+      "common_name": "Floripondio",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "medium",
+      "zone": "tropical",
+      "image_url": "https://static.inaturalist.org/photos/127955244/medium.jpeg"
+    },
+    {
+      "id": "98",
+      "scientific_name": "Tilia cordata",
+      "common_name": "Tilo",
+      "description": "Descripción no disponible.",
+      "family": "Desconocida",
+      "difficulty": "hard",
+      "zone": "tropical",
+      "image_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/12491246/medium.jpg"
+    }
+  ]
+}
