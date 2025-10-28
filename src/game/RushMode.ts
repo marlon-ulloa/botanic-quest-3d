@@ -768,7 +768,7 @@ private animatePlayer(time: number): void {
 
     if (this.plantMesh) {
       this.plantMesh.position.z += this.speed;
-      this.plantMesh.rotation.y += 0.02;
+      //this.plantMesh.rotation.y += 0.02;
     }
 
     this.optionMeshes.forEach(mesh => {
