@@ -17,7 +17,7 @@ export class RushMode {
   private optionMeshes: THREE.Mesh[] = [];
   private groundSegments: THREE.Mesh[] = [];
   private plantMesh: THREE.Mesh | null = null;
-  private speed = 0.05;
+  private speed = 0.1;
   private times = 0;
   private timeDivisor=20;
   private score = 0;
@@ -813,9 +813,9 @@ private animatePlayer(time: number): void {
       }*/
      if(this.times > 0){
       if (this.isInMobile){
-        this.speed = this.speed + 0.002;
+        this.speed = this.speed + 0.005;
       }else
-        this.speed = this.speed + 0.001;
+        this.speed = this.speed + 0.005;
      }
     } else {
       this.lives--;
