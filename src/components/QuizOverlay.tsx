@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Plant } from '../lib/supabase';
 import { CheckCircle, XCircle } from 'lucide-react';
 
@@ -13,6 +13,24 @@ export default function QuizOverlay({ plant, options, onAnswer }: QuizOverlayPro
   const [showResult, setShowResult] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [attempts, setAttempts] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(5); // ⏱️ contador de 10 segundos
+
+
+   // Contador regresivo
+  useEffect(() => {
+  const timer = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          onAnswer(false, 0);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   const handleAnswer = (answer: string) => {
     if (showResult) return;
@@ -39,6 +57,16 @@ export default function QuizOverlay({ plant, options, onAnswer }: QuizOverlayPro
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-8 animate-fade-in">
+
+
+      {/* ⏱️ Contador visual arriba a la derecha */}
+        <div className="flex justify-center top-4 right-6 text-gray-800 font-semibold text-lg">
+          ⏳ {timeLeft}s
+        </div>
+
+
+
+
         <div className="text-center mb-6">
           <h2 className="text-2xl font-bold text-gray-800 mb-2">
             ¿Cuál es el nombre científico de esta planta?
