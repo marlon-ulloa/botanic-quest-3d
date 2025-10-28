@@ -610,14 +610,91 @@ private createMobileControls() {
     const startZ = -10; // Posición Z inicial
     const offsetX = (plantsPerRow - 1) * spacingX / 2; // Para centrar las plantas
 
-    for (let row = 0; row < rows; row++) {
+    /*for (let row = 0; row < rows; row++) {
       for (let col = 0; col < plantsPerRow; col++) {
         positions.push({
           x: (col * spacingX) - offsetX, // Distribuir de izquierda a derecha, centrado
           z: startZ - (row * spacingZ) // Ir alejándose en profundidad
         });
       }
+    }*/
+
+  
+  
+  
+  
+  
+  
+  
+      // Límites del plano (ajústalos según el tamaño real del plano)
+  /*const planeWidth = plantsPerRow * spacingX;
+  const planeDepth = rows * spacingZ;
+
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < plantsPerRow; col++) {
+
+      // Agregamos una pequeña variación aleatoria (pero controlada)
+      const randomOffsetX = (Math.random() - 0.5) * (spacingX * 0.4); // máx ±40% del espaciado
+      const randomOffsetZ = (Math.random() - 0.5) * (spacingZ * 0.4);
+
+      // Calculamos la posición base
+      let x = (col * spacingX) - offsetX + randomOffsetX;
+      let z = startZ - (row * spacingZ) + randomOffsetZ;
+
+      // Aseguramos que las plantas no salgan del plano
+      const halfWidth = planeWidth / 2;
+      const halfDepth = planeDepth / 2;
+
+      x = Math.max(-halfWidth, Math.min(halfWidth, x));
+      z = Math.max(-planeDepth - startZ, Math.min(startZ, z));
+
+      positions.push({ x, z });
     }
+  }*/
+
+
+
+
+
+
+
+
+
+
+
+  const totalPlants = 98;
+  const spacingMin = 8; // distancia mínima entre plantas
+  const planeWidth = 80; // tamaño del plano en X (ajusta según tu escena)
+  const planeDepth = 350; // tamaño del plano en Z (ajusta según tu escena)
+  
+  let attempts = 0;
+  const maxAttempts = 5000;
+
+  while (positions.length < totalPlants && attempts < maxAttempts) {
+    attempts++;
+
+    // Generamos coordenadas aleatorias dentro del plano
+    const x = (Math.random() - 0.5) * planeWidth;
+    const z = startZ - Math.random() * planeDepth;
+
+    // Verificamos que esté lo suficientemente lejos de las demás
+    const tooClose = positions.some(p => {
+      const dx = p.x - x;
+      const dz = p.z - z;
+      return Math.sqrt(dx * dx + dz * dz) < spacingMin;
+    });
+
+    if (!tooClose) {
+      positions.push({ x, z });
+    }
+  }
+
+  if (positions.length < totalPlants) {
+    console.warn(`Solo se generaron ${positions.length} plantas (espaciado o plano demasiado pequeño).`);
+  }
+
+
+
 
     // Crear las 98 plantas (o las que haya disponibles)
     plants.forEach((plant, index) => {

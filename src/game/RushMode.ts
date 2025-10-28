@@ -18,6 +18,8 @@ export class RushMode {
   private groundSegments: THREE.Mesh[] = [];
   private plantMesh: THREE.Mesh | null = null;
   private speed = 0.05;
+  private times = 0;
+  private timeDivisor=20;
   private score = 0;
   private plantsCorrect = 0;
   private plantsTotal = 0;
@@ -675,8 +677,10 @@ private animatePlayer(time: number): void {
     
     const geometry = new THREE.BoxGeometry(3, 3, 0.5);
     const material = new THREE.MeshStandardMaterial({
-      color: option.correct ? 0x4CAF50 : 0x2196F3,
-      emissive: option.correct ? 0x2E7D32 : 0x1565C0,
+      //color: option.correct ? 0x4CAF50 : 0x2196F3,
+      color: 0x1565C0,
+      //emissive: option.correct ? 0x2E7D32 : 0x1565C0,
+      emissive: 0x1565C0,
       emissiveIntensity: 0.2
     });
     console.log(option.text);
@@ -778,6 +782,7 @@ private animatePlayer(time: number): void {
         this.score += 100;
         this.plantsCorrect++;
         this.createSuccessEffect();
+        this.times++;
       } else {
         this.lives--;
         this.createFailEffect();
@@ -789,6 +794,11 @@ private animatePlayer(time: number): void {
 
       if (this.lives <= 0 && this.onGameOver) {
         this.onGameOver(this.score, this.plantsCorrect, this.plantsTotal);
+      }
+
+      // check time to update speed
+      if(this.times > 0 && (this.times % this.timeDivisor)) {
+        this.speed = this.speed + 0.01;
       }
     } else {
       this.lives--;
