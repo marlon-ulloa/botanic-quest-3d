@@ -158,14 +158,31 @@ function App() {
 
   const handleQuizAnswer = (correct: boolean, attempts: number) => {
     if (!currentQuizPlant) return;
-
+    console.log(correct && explorationRef.current);
     if (correct && explorationRef.current) {
+      //console.log("Ingresaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
       explorationRef.current.markPlantDiscovered(currentQuizPlant.id);
       saveProgress(currentQuizPlant.id, 'exploration', attempts);
     }
+    
+    
+    
+    
+    else if (explorationRef.current) {
+    // ← NUEVO: Limpiar la bandera para permitir reintentos
+    explorationRef.current.clearQuizFlag(currentQuizPlant.id);
+    }
 
-    setCurrentQuizPlant(null);
-    setQuizOptions([]);
+
+
+
+
+    
+    //if(attempts > 0){
+      setCurrentQuizPlant(null);
+      setQuizOptions([]);
+    //}
+    
   };
 
   const handleModeSelect = (mode: 'exploration' | 'rush' | 'herbario') => {

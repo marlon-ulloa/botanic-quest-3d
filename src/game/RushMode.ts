@@ -29,6 +29,9 @@ export class RushMode {
   private controls = {left: false, right: false};
   private laneWidth = 4;
 
+  // Solo crear controles si es dispositivo móvil
+  private isInMobile = false;
+
   onQuizResult: ((correct: boolean, plant: Plant) => void) | null = null;
   onGameOver: ((score: number, correct: number, total: number) => void) | null = null;
 
@@ -37,13 +40,21 @@ export class RushMode {
     this.scene.background = new THREE.Color(0x87CEEB);
     this.scene.fog = new THREE.Fog(0x87CEEB, 5, 40);
 
+    // Solo crear controles si es dispositivo móvil
+    this.isInMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
     this.camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
-    this.camera.position.set(0, 5, 10);
+    if(this.isInMobile){
+      this.camera.position.set(0, 5, 15);
+      this.speed = 0.1;
+    }
+    else
+      this.camera.position.set(0, 5, 10);
     this.camera.lookAt(0, 0, -10);
 
     this.setupLights();
@@ -797,9 +808,15 @@ private animatePlayer(time: number): void {
       }
 
       // check time to update speed
-      if(this.times > 0 && (this.times % this.timeDivisor)) {
+      /*if(this.times > 0 && (this.times % this.timeDivisor)) {
         this.speed = this.speed + 0.01;
-      }
+      }*/
+     if(this.times > 0){
+      if (this.isInMobile){
+        this.speed = this.speed + 0.002;
+      }else
+        this.speed = this.speed + 0.001;
+     }
     } else {
       this.lives--;
       if (this.lives <= 0 && this.onGameOver) {

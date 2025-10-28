@@ -17,6 +17,10 @@ export class ExplorationMode {
   private moveSpeed = 0.15;
   private discoveredPlants: Set<string> = new Set();
 
+  private plantsShowingQuiz: Set<string> = new Set(); // ← NUEVO: plantas con quiz activo
+  private plantCooldowns: Map<string, number> = new Map(); // ← NUEVO: rastrea cooldowns
+  private readonly COOLDOWN_TIME = 3000; // ← 3 segundos en milisegundos
+
   onPlantNear: ((plant: Plant) => void) | null = null;
 
   constructor() {
@@ -876,7 +880,8 @@ private createMobileControls() {
 
     this.camera.position.x = this.player.position.x;
     this.camera.position.y = this.player.position.y + 2;
-    this.camera.position.z = this.player.position.z + 5;
+    //this.camera.position.z = this.player.position.z + 5;
+    this.camera.position.z = this.player.position.z + 8;
     this.camera.lookAt(this.player.position);
 
     this.checkPlantProximity();
@@ -885,11 +890,32 @@ private createMobileControls() {
   private checkPlantProximity() {
     const proximityDistance = 3;
 
+
+    const currentTime = Date.now(); // ← Obtener tiempo actual
+
     for (const plantObj of this.plants) {
       const distance = this.player.position.distanceTo(plantObj.mesh.position);
 
-      if (distance < proximityDistance && !plantObj.discovered && !this.discoveredPlants.has(plantObj.plant.id)) {
-        this.discoveredPlants.add(plantObj.plant.id);
+       // ← NUEVO: Verificar si la planta está en cooldown
+      const cooldownEnd = this.plantCooldowns.get(plantObj.plant.id);
+      const isInCooldown = cooldownEnd && currentTime < cooldownEnd;
+
+      //if (distance < proximityDistance && !plantObj.discovered && !this.discoveredPlants.has(plantObj.plant.id)) {
+      // Mostrar quiz si está cerca, no descubierta y no tiene quiz activo
+      if (distance < proximityDistance && 
+          !plantObj.discovered && 
+          !this.discoveredPlants.has(plantObj.plant.id) &&
+          !this.plantsShowingQuiz.has(plantObj.plant.id) &&
+          !isInCooldown) { // ← CAMBIO
+        
+        this.plantsShowingQuiz.add(plantObj.plant.id); // ← Marcar como
+        
+        
+        
+        
+        
+        //this.discoveredPlants.add(plantObj.plant.id);
+        //plantObj.discovered = false;
         if (this.onPlantNear) {
           this.onPlantNear(plantObj.plant);
         }
@@ -902,6 +928,11 @@ private createMobileControls() {
     if (plantObj) {
       plantObj.discovered = true;
 
+      this.discoveredPlants.add(plantId); // ← Ahora sí agregar definitivamente
+      this.plantsShowingQuiz.delete(plantId); // ← Limpiar del Set temporal
+
+      this.plantCooldowns.delete(plantId); // ← Limpiar cooldown si existe
+
       const flower = plantObj.mesh.children.find(
         child => child instanceof THREE.Mesh && child.geometry instanceof THREE.SphereGeometry
       ) as THREE.Mesh;
@@ -912,6 +943,14 @@ private createMobileControls() {
         this.createParticles(plantObj.mesh.position);
       }
     }
+  }
+
+   // ← NUEVO MÉTODO: para cuando el quiz se cierra sin respuesta correcta
+  clearQuizFlag(plantId: string) {
+    this.plantsShowingQuiz.delete(plantId);
+
+    // ← NUEVO: Establecer cooldown para esta planta
+    this.plantCooldowns.set(plantId, Date.now() + this.COOLDOWN_TIME);
   }
 
   private createParticles(position: THREE.Vector3) {
@@ -962,5 +1001,7 @@ private createMobileControls() {
   dispose() {
     window.removeEventListener('keydown', () => {});
     window.removeEventListener('keyup', () => {});
+
+    this.plantCooldowns.clear(); // ← Limpiar cooldowns al dispose
   }
 }
